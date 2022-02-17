@@ -143,6 +143,11 @@ button a {
   margin: 0;
 }
 
+.w3-padding a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
 .w3-padding li {
   list-style-type: none;
   margin: 5px 0;
@@ -317,11 +322,11 @@ textarea {
     opacity: .4;
   }
   .con {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1.4rem;
     padding-left: 14px;
     bottom: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   .info2 a {
     font-size: 1.4rem;
@@ -335,6 +340,9 @@ textarea {
     margin-right: 16px;
     margin-top: 4rem;
     margin-bottom: 2rem;
+  }
+  .subcent textarea {
+    width: 93.5%;
   }
   .w3-left {
     padding: 0;
