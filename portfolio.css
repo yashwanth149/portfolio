@@ -114,13 +114,16 @@ button a {
 }
 
 .project {
-  padding-left: 9rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 1rem 0;
 }
 
 .project img {
   border-radius: .4rem;
-  float: left;
-  margin: 4px 16px;
   max-width: 100%;
   height: auto;
   opacity: .4;
@@ -305,19 +308,20 @@ textarea {
     width: 90%;
   }
   .project {
+    display: block;
     padding: 0;
   }
   .project img {
-    float: none;
     margin: 4px 0;
     width: 100%;
     opacity: .4;
   }
   .con {
-    font-size: 1.1rem;
-    padding: 1.8rem;
+    font-size: 1.4rem;
+    padding: 1.4rem;
     padding-left: 14px;
     bottom: 18px;
+    letter-spacing: 3px;
   }
   .info2 a {
     font-size: 1.4rem;
