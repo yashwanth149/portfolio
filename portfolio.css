@@ -43,8 +43,11 @@ h1 {
   padding: .2rem 0;
 }
 
-p {
-  font-size: 1.5rem;
+.front p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
 button {
@@ -89,17 +92,18 @@ button a {
 }
 
 .projects {
-  width: 90%;
+  width: 88%;
   max-width: 100%;
   margin: 0 auto;
   padding: 16px;
+  padding-bottom: 4rem;
   z-index: 1;
   position: relative;
   margin-top: -12rem;
-  background-color: #F2F2F2;
+  background-color: #fff;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .projects h2 {
@@ -107,22 +111,19 @@ button a {
   margin: 1rem 2rem;
 }
 
-.project::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .project {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
   padding: 1rem 0;
 }
 
 .project img {
+  display: block;
   border-radius: .4rem;
   max-width: 100%;
   height: auto;
@@ -131,6 +132,8 @@ button a {
 
 .project img:hover {
   opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .w3-content {
@@ -154,33 +157,20 @@ button a {
   padding: 2px 0;
 }
 
-.w3-certy {
-  padding: 16px;
-  margin-bottom: 3rem;
-  padding-left: 2rem;
-}
-
-.w3-certy ul {
-  padding: 4px 16px;
-}
-
-.w3-certy li {
-  list-style: none;
-  padding: 2px 0;
-  margin: 5px 0;
-}
-
 .center {
   margin-bottom: 0rem;
   padding: 16px;
   padding-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #7510f7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
 
 .w3-black {
+  font-size: 1.3rem;
   color: #fff;
   font-weight: bold;
   display: inline;
@@ -198,6 +188,7 @@ button a {
 input {
   border: none;
   display: block;
+  outline: none;
   margin: 2px 0 0 0;
   padding: 14px 0 14px 3px;
   border-radius: 4px;
@@ -206,15 +197,21 @@ input {
           box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.3);
 }
 
+label {
+  padding: 5px 0px;
+  display: block;
+}
+
 textarea {
   border: none;
+  outline: none;
   border-radius: 4px;
   max-width: 100%;
   -webkit-box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.3);
   margin: 1.3rem 0;
-  margin-left: 0px;
   height: 180px;
+  margin-right: 13px;
   display: block;
 }
 
@@ -233,25 +230,27 @@ textarea {
 }
 
 .subcent {
+  max-width: 100%;
   margin-bottom: 5rem;
   margin-top: 4.5rem;
   padding: 0 16px;
   padding-top: 1.7rem;
-  padding-bottom: 1px;
+  padding-bottom: .2rem;
   background-color: #fff;
-  border-radius: 8px;
-  -webkit-box-shadow: 1px 3px 7px 0px rgba(255, 255, 255, 0.6);
-          box-shadow: 1px 3px 7px 0px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .w3-left {
   color: #fff;
   padding: 16px;
-  background-color: #7510f7;
-  width: 100%;
-  height: inherit;
-  padding-left: 2rem;
   margin-top: 4.5rem;
+}
+
+.w3-left i {
+  font-size: 3rem;
+  color: #000;
 }
 
 .w3-left p {
@@ -267,9 +266,10 @@ textarea {
   z-index: 1;
   font-size: 2rem;
   padding-left: 2.3rem;
-  background-color: #141c3a;
-  -webkit-box-shadow: 1px 3px 7px 0px rgba(255, 255, 255, 0.8);
-          box-shadow: 1px 3px 7px 0px rgba(255, 255, 255, 0.8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#141e30), to(#243b55));
+  background: linear-gradient(#141e30, #243b55);
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -312,19 +312,24 @@ textarea {
   .left {
     width: 90%;
   }
+  .projects {
+    padding-bottom: 7px;
+  }
   .project {
     display: block;
     padding: 0;
   }
+  .projects h2 {
+    margin: 14px 0 28px 0;
+  }
   .project img {
-    margin: 4px 0;
+    margin: 4px 0 16px 0;
     width: 100%;
     opacity: .4;
   }
   .con {
-    font-size: 1.2rem;
-    padding: 1.4rem;
-    padding-left: 14px;
+    font-size: 1.4rem;
+    padding: 1.3rem 10px 1.3rem 10px;
     bottom: 18px;
     letter-spacing: 2px;
   }
@@ -337,18 +342,22 @@ textarea {
     display: block;
   }
   .subcent {
+    float: none;
     margin-right: 16px;
     margin-top: 4rem;
     margin-bottom: 2rem;
   }
   .subcent textarea {
-    width: 93.5%;
+    margin-right: 0 !important;
+    width: 95.5%;
   }
   .w3-left {
-    padding: 0;
+    width: inherit;
+    float: none;
+    padding: 6px 5px;
     margin-bottom: 3rem;
     margin-top: 0;
-    line-height: 6px;
+    line-height: 19px;
     letter-spacing: 2px;
   }
 }
