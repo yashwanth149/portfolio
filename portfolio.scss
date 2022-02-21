@@ -276,7 +276,28 @@ textarea {
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1100px) {
+    .center {
+        grid-gap: 1rem;
+        transition: .2s;
+        display: block;
+    }
+    .subcent {
+        margin-right: 10px;
+        margin-bottom: 16px;
+    }
+    .w3-left {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    textarea {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
     .front {
         padding-top: 0;
     }
