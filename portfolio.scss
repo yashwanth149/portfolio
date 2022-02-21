@@ -125,7 +125,7 @@ button a {
 }
 
 .w3-padding {
-    padding: 4px 16px;
+    padding: 4px 0px;
     margin: 0;
 }
 
@@ -316,8 +316,8 @@ textarea {
     }
 
     .con {
-        font-size: 1.4rem;
-        padding: 1.3rem 10px 1.3rem 10px;
+        font-size: 1.3rem;
+        padding: 1.3rem 22px 1.3rem 29px;
         bottom: 18px;
         letter-spacing: 2px;
     }
@@ -329,9 +329,14 @@ textarea {
     .center {
         display: block;
     }
+
+    .w3-content h2 {
+        font-size: 1.3rem ;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+    }
     
     .subcent {
-        float: none;
         margin-right: 16px;
         margin-top: 4rem;
         margin-bottom: 2rem;
@@ -339,7 +344,7 @@ textarea {
 
     .subcent textarea {
         margin-right: 0 !important;
-        width: 95.5%;
+        width: 93.7%;
     }
 
     .w3-left {
