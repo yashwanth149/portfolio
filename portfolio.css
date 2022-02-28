@@ -303,12 +303,12 @@ textarea {
   .subcent {
     margin-right: 10px;
     margin-bottom: 16px;
-    -webkit-transition: .4s;
-    transition: .4s;
   }
   .w3-left {
     margin-top: 0;
     margin-bottom: 16px;
+    -webkit-transition: margin-top  0.9s;
+    transition: margin-top  0.9s;
   }
   textarea {
     width: 50%;

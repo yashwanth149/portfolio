@@ -114,9 +114,11 @@ button a {
     opacity: .4;
 }
 
-.project img:hover {
+
+&:hover .project img {
     opacity: 1;
-    transition: .3s;
+    transition: transform 5s, opacity .3s;
+
 }
 
 .w3-content  {
@@ -228,13 +230,13 @@ textarea {
 
 }
 
-.w3-left i {
-    font-size: 3rem;
+.w3-style {
+    font-size: 3rem !important;
     color: #000;
 }
 
 .w3-left p {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -284,11 +286,11 @@ textarea {
     .subcent {
         margin-right: 10px;
         margin-bottom: 16px;
-        transition: .4s;
     }
     .w3-left {
         margin-top: 0;
         margin-bottom: 16px;
+        transition: margin-top  0.9s;
     }
     textarea {
         width: 50%;
@@ -322,8 +324,7 @@ textarea {
     }
 
     .project {
-        display: block;
-        padding: 0;
+        display: block !important;
     }
 
     .projects h2{
@@ -370,7 +371,6 @@ textarea {
 
     .w3-left {
         width: inherit;
-        float: none;
         padding: 6px 5px;
         margin-bottom: 3rem;
         margin-top: 0;
@@ -380,7 +380,6 @@ textarea {
     }  
 
 }
-
 
 
 
