@@ -283,8 +283,8 @@ textarea {
 
 .info2 {
     text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 2.6rem;
+    padding-bottom: 5rem;
+    padding-top: 5.6rem;
     background-color: #fff;
 }
 
@@ -299,9 +299,9 @@ textarea {
 
 @media screen and (max-width:1100px) {
     p {
-        font-size: 1rem;
+        font-size: .8rem;
         letter-spacing: 1px;
-        word-spacing: 2px;
+        word-spacing: 4px;
     }
     .center {
         grid-gap: 1rem;
@@ -323,7 +323,6 @@ textarea {
         padding: 18px;
     }
     .projects {
-        outline: 1px solid tomato;
         padding-bottom: 16px;
     }
 
