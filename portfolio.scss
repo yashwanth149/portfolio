@@ -269,7 +269,7 @@ textarea {
 
 
 .con {
-    width: 80%;
+    width: 75%;
     margin: 7px auto;
     color: white;
     position: relative;
@@ -280,10 +280,19 @@ textarea {
     background: linear-gradient(#141e30, #243b55);
     box-shadow: 0px 15px 25px rgba(0,0,0,.6);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 36px 6px;
     margin-bottom: 3rem;
-
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
 }
+
+@keyframes example {
+    0%   {transform:scale(1);}
+    50%  {transform:scale(1.1);}
+    100% {transform:scale(1);}
+}
+
 
 .info {
     background-color: #7510f7;
@@ -387,6 +396,7 @@ textarea {
         padding: 1.3rem 22px 1.3rem 29px;
         bottom: 18px;
         letter-spacing: 2px;
+        border-radius: 20px 6px;
     }
     .info2 a {
         font-size: 1.4rem;
