@@ -109,11 +109,11 @@ button a {
 .container {
     position: relative;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 22px;
     transform: translateY(0);
 }
 .overly {
-    border-radius: 6px;
+    border-radius: 11px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -375,7 +375,13 @@ textarea {
     }
     
     .projects {
-        padding-bottom: 7px;
+        padding-bottom: 27px;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3%;
     }
 
     .project {
